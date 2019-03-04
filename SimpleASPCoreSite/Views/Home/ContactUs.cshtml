@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewData["Title"] = "ContactUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <div class="breadcrumb-area bg-image section-ptb" style="background-image: url(/images/bg/breadcrumb-bg.jpg)">
+            <div>
+                <div class="breadcrumb">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Contact</h2>
+                            <!-- breadcrumb-list start -->
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="breadcrumb-item active">Contact</li>
+                            </ul>
+                            <!-- breadcrumb-list end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="page-content">
+        <div class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48381.42847288249!2d-74.03050936053766!3d40.721554459840064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2575f4d4c2c99%3A0x1914d460e14d2760!2sCarlo&#39;s+Bakery!5e0!3m2!1sru!2sua!4v1551371741158" width="100%" height="400" frameborder="0" style="border: 0" allowfullscreen></iframe>
+
+        </div>
+        <div class="contact-form-area">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="form_wrapper form-style-1">
+                            <div class="contact-title">
+                                <div class="title-3">
+                                    <h3>Get In Touch</h3>
+                                </div>
+                            </div>
+                            <div class="form-inner-box-warp">
+                                <form id="contact-form">
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-30">
+                                            <input name="name" type="text" placeholder="Name*">
+                                        </div>
+                                        <div class="col-lg-12  mb-30">
+                                            <input name="email" type="email" placeholder="Email*">
+                                        </div>
+                                        <div class="col-lg-12  mb-30">
+                                            <input type="text" placeholder="Subject*">
+                                        </div>
+                                        <div class="col-lg-12  mb-30">
+                                            <textarea name="message" placeholder="Your Message*"></textarea>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button type="submit" class="submit-btn default-btn">Send</button>
+                                            <p class="form-messege"></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 col-md-6 cont-us">
+                        <div class="contact-info-wrapper">
+                            <div class="contact-title">
+                                <div class="title-3">
+                                    <h3>Contact Us</h3>
+                                </div>
+                            </div>
+
+                            <div class="contact-info">
+                                <ul>
+                                    <li>
+                                        <div class="contact-text d-flex align-items-center">
+                                            <i class="fa fa-phone"></i>
+                                            <p>
+                                                <a href="#">+012 345 678 102</a>
+                                                <a href="#">+012 345 678 102</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-text d-flex align-items-center">
+                                            <i class="fa fa-globe"></i>
+                                            <p>
+                                                <a href="#"> urname@email.com</a>
+                                                <a href="#"> urwebsite@name.com</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-text d-flex align-items-center">
+                                            <i class="fa fa-map-marker"></i>
+                                            <p>
+                                                Address goes here, <br>street, Crossroad 123.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

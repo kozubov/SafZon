@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SimpleASPCoreSite</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" />
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.min.css" />
+</head>
+<body>
+    <header>
+        <div class="header-top d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p>Have any question ? +215 2145 2154</p>
+                    </div>
+                    <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
+                        <ul class="socail-top">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar  navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow main-menu"> @* mb-3 *@
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row">
+                    <ul class="navbar-nav flex-grow-0 ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="header-btn text-right">
+                        <a class="btn-circle btn-transparent btn" asp-area="" asp-controller="Home" asp-action="ContactUs">appointment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div>
+    <main role="main">
+        @RenderBody()
+    </main>
+</div>
+    <footer class="border-top footer text-muted">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-style-1">
+                            <h5 class="ft-title">ABOUT <span>US</span></h5>
+                            <div class="content">
+                                <p>There are many variations of pof em Ipsum avalable, but the majority haveatime form, binjected humour, or romised scvono dos nai..but.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-style-1 space-left">
+                            <h5 class="ft-title">CONTACT <span>US</span></h5>
+                            <div class="content">
+                                <p>ur address goes here, <br>stree Crossroad123.</p>
+                                <div class="ft-address">
+                                    <p>P : 99 55 66 88 526</p>
+                                    <p>F : 55 44 77 62</p>
+                                    <p>E : <a href="#">expu@email.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-style-1 space-left">
+                            <h5 class="ft-title">QUICK <span>LINKS</span></h5>
+                            <div class="content">
+                                <ul class="ft-menu">
+                                    <li><a href="#">Our Services</a></li>
+                                    <li><a href="#">Our Company</a></li>
+                                    <li><a href="#">Vision & Mission</a></li>
+                                    <li><a href="#">Our Product</a></li>
+                                    <li><a href="#">Our Fajlami</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footer-widget footer-style-1 space-left">
+                            <h5 class="ft-title">NEWSLETTER <span>NOW</span></h5>
+                            <div class="content">
+                                <p>There are many variations ofof reavalable, but the majority </p>
+                                <div class="input-box newsletter-box">
+                                    <form id="mc-form" class="mc-form footer-newsletter">
+                                        <input id="mc-email" type="email" autocomplete="off">
+                                        <button id="mc-submit"><i class="fa fa-paper-plane-o"></i></button>
+                                    </form>
+                                </div>
+                                <div class="social-share">
+                                    <a title="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a title="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a title="google-plus" href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a title="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a title="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-12 pd-0">
+            <div class="copyright text-center">
+                <div> &copy; 2019 - SafZon by Kozubov </div>
+            </div>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
